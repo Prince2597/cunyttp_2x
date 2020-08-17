@@ -1,11 +1,15 @@
 // 1 - Select the section with an id of container without using querySelector.
-document.getElementById("container");
+let y = document.getElementById("container");
+console.log(y);
 // 2 - Select the section with an id of container using querySelector.
-document.querySelector('#container');
+let r = document.querySelector('#container');
+ console.log(r);
 // 3 - Select all of the list items with a class of "second".
-document.getElementsByClassName('second');
+let p = document.getElementsByClassName('second');
+console.log(p);
 // 4 - Select a list item with a class of third, but only the list item inside of the ol tag.
-document.querySelector('ol .third');
+let w = document.querySelector('ol .third');
+console.log(w);
 // 5 - Give the section with an id of container the text "Hello!"
 let initp = document.createElement('p');
 let content = document.createTextNode("Hello");
@@ -28,9 +32,9 @@ let el = document.querySelector('ul');
 el.insertBefore(li, document.querySelector('.third'));
 // 11 - Loop over all of the lis inside the ol tag and give them a background color of "green"
 let ol = document.querySelector('ol');
-let li = ol.querySelectorAll('li');
-for(let e of li) {
-    u.style.backgroundColor = 'green';
+let le = ol.querySelectorAll('li');
+for(let e of le) {
+    e.style.backgroundColor = 'green';
 }
 // 12 - Remove the div with a class of footer
 document.querySelector('.footer').remove('div')
